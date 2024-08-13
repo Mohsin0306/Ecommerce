@@ -1,0 +1,69 @@
+.banner {
+    background-color: #ffdce5;
+    border-radius: 15px;
+    overflow: hidden; /* Ensure content fits within the banner */
+}
+
+.banner h1 {
+    font-weight: 400;
+}
+
+.input-group {
+    border-radius: 25px;
+}
+
+.input-group input {
+    border: 0.5px solid grey;
+    box-shadow: none;
+}
+
+.btn-outline-secondary {
+    color: pink;
+    background-color: white;
+    border: 0.5px solid grey;
+}
+
+.image-slider {
+    position: relative;
+    height: 250px; /* Fixed height for images */
+    width: 450px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+    overflow: hidden; /* Ensure content fits within the slider */
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%; /* Ensure images fill the container */
+    object-fit: fill;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity changes */
+}
+
+/* Keyframes for fading effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image-slider img.active {
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in effect */
+}
+
+/* Responsive styling */
+@media (max-width: 767px) {
+    .banner {
+        height: auto; /* Allow height to adjust on small screens */
+    }
+}

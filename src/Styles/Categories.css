@@ -1,0 +1,24 @@
+.categories-container {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .category-icon {
+    color: rgb(247, 153, 169);
+    font-size: 2rem; /* Adjust size as needed */
+  }
+  
+  .icon-label {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem; /* Adjust size as needed */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    .category-icon {
+      font-size: 1.5rem; /* Adjust size for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,39 @@
+/* src/Styles/ProductCard.css */
+.product-card {
+    flex: 0 0 auto;
+    margin: 10px; /* Space between cards */
+    background-color: pink; /* Set background color to pink */
+    border: 1px solid #bbb8b8; /* Border for better visual separation */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for neat corners */
+    width: 200px; /* Fixed width for the card */
+    transition: transform 0.3s ease; /* Smooth transition for card scaling */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+  }
+  
+  .card-img-top {
+    width: 200px; /* Full width of the card */
+    height: 200px; /* Fixed height for all images */
+    object-fit: fill; /* Maintain aspect ratio and cover the area */
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+  }
+  
+  .product-card:hover .card-img-top {
+    transform: scale(1.1); /* Scale up the image on card hover */
+  }
+  
+  .card-body {
+    text-align: center; /* Center text in the card body */
+    padding: 10px; /* Add padding inside the card body */
+  }
+  
+  .card-title.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  
